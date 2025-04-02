@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ice Cream Parlour</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Ice Cream Parlour</h1>
+    <p>Choose your favorite flavors and enjoy!</p>
+    <!-- Navigation Links -->
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="flavors">
+      <div class="flavor">
+        <img src="vanilla.jpg" alt="Vanilla Ice Cream">
+        <h3>Vanilla</h3>
+        <button class="add-to-cart" data-flavor="Vanilla" data-price="3">Add to Cart</button>
+      </div>
+      <div class="flavor">
+        <img src="chocolate.jpg" alt="Chocolate Ice Cream">
+        <h3>Chocolate</h3>
+        <button class="add-to-cart" data-flavor="Chocolate" data-price="3">Add to Cart</button>
+      </div>
+      <div class="flavor">
+        <img src="strawberry.webp" alt="Strawberry Ice Cream">
+        <h3>Strawberry</h3>
+        <button class="add-to-cart" data-flavor="Strawberry" data-price="3">Add to Cart</button>
+      </div>
+      <div class="flavor">
+        <img src="mint.jpg" alt="Mint Ice Cream">
+        <h3>Mint</h3>
+        <button class="add-to-cart" data-flavor="Mint" data-price="3">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about-us">
+    <h2>About Us</h2>
+    <p>Welcome to the Ice Cream Parlour! We are a family-owned business dedicated to serving delicious, handmade ice cream made with love and high-quality ingredients. Our mission is to bring joy to every customer with a scoop of happiness in every cone!</p>
+    <p>We offer a wide range of classic and seasonal flavors, all crafted in-house. Whether you're a chocolate lover or a fan of fruity sorbets, we've got something for everyone. Come and enjoy the sweetness of life with us!</p>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact-us">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST" id="contact-form">
+      <div class="input-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+      </div>
+
+      <div class="input-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-list"></ul>
+    <p>Total: ₹<span id="total-price">0</span></p>
+    <button id="checkout">Checkout</button>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Your Ice Cream Parlour</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
